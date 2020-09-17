@@ -1,0 +1,44 @@
+size(800, 600);
+background(255);
+
+println("Hello");
+
+let a = 10;
+println(a);
+println(typeof(a));
+
+let b: float = 10;
+println(typeof(b));
+
+let c, d = 10, 20;
+println(c, d);
+c, d = d, c;
+println(c, d);
+
+fn add(a: int, b: int) -> int {
+    return a + b;
+}
+    
+println(add(100, 100));
+
+----------------------------------------
+
+size(800, 600);
+background(255);
+
+let color = 0;
+fn draw() -> void {
+    background(color);
+    if(color == 256) {
+        color = 0;
+    }
+    color++;
+}
+
+----------------------------------------
+
+// brainfuck
++++++++++[>++++++++>++++++++++
++>+++++<<<-]>.>++.+++++++..+++.>-.
+------------.<++++++++.--------.+++.------.-
+-------.>+.
